@@ -24,7 +24,8 @@ public:
         
         unordered_map<int, vector<int>> map;   //map to store the sum_so_far and ending index of all subarrays whose
                                                // sum = sum_so_far;
-          map[0].push_back(-1);                //to handle the case when subarray start from the start of the array                   
+          map[0].push_back(-1);                //to handle the case when subarray start from the start of the array  
+		                   
         for(int i=0; i<n; i++){             //traverse through the array
          
          sum_so_far += nums[i];            //add current element to sum_so_far
